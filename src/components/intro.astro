@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Начни с себя" id="intro">
+  <Icon slot="eyebrow" name="logomark" class="h-32" />
+  <Fragment slot="lead">
+    Мы рады приветствовать вас на нашем сайте, посвященном
+    <span class="text-primary">альтруизму</span> - идеалу,
+    который воплощает в себе самые высокие
+    <span class="text-primary">ценности человечества.</span>
+     Если вы размышляете о том, как
+    <span class="text-primary"> сделать мир лучше</span>
+    и наполнить его смыслом, то вы нашли подходящее место.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://docs.astro.build/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="telescope" class="h-8" />
+      <span>Читать статьи</span>
+    </a>
+    <a
+      href="https://astro.new/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="rocket" class="h-8" />
+      <span>Видео материал</span>
+    </a>
+  </div>
+</ContentSection>
